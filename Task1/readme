@@ -28,3 +28,10 @@ Method B
 ========
 Scripts/plugins can be created and used in monitoring tools like Zabbix, Nagios.
 Example of some metrics listed above can be found here: https://www.zabbix.com/documentation/4.0/manual/config/items/itemtypes/zabbix_agent
+
+
+Challenges
+==========
+- Monitoring itself takes system resources, so planning what to monitor and how frequently to avoid unnecessary load on server.
+- Setting or coding proper limits to reduce false positives.
+- Writing effective code to monitor those metrics and/or setting up monitoring server.

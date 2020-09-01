@@ -1,1 +1,30 @@
+>>> Server is performing SSL offloading to reduce load on Applications server.
 
+Metrics to monitor, how to monitor and challenges involved.
+===========================================================
+
+Metrics
+=======
+
+- CPU load ('mpstat' or 'top' command in Linux or 'cat /proc/loadavg')
+---- Shows CPU load at given time.
+- Disk Input/output & usage ('iostat' for I/O  // 'df' for disk usage)
+---- How much disk space has been used and what the current read/write usage is.
+- Open TCP connections ('netstat' and/or 'ss')
+---- Total number of active TCP connections that are established.
+- Memory free ('cat /proc/meminfo')
+---- The amount of RAM being used
+- bytes sent and received ('ifconfig')
+---- Total amount of sent/received data on interface(s)
+
+- SSL Cert expiry check to make sure Certificate is valid.
+---- Can use existing community made template on Zabbix: https://share.zabbix.com/cat-app/web-servers/ssl-certificates-check
+
+Method A
+========
+Create a Python script that monitors /proc/ readouts or executes a linux command and extracts useable data. Can be periodically run by use of Cron job.
+
+Method B
+========
+Scripts/plugins can be created and used in monitoring tools like Zabbix, Nagios.
+Example of some metrics listed above can be found here: https://www.zabbix.com/documentation/4.0/manual/config/items/itemtypes/zabbix_agent

@@ -4,7 +4,8 @@ Objective
 
 
 Build instructions (On Linux)
-- create file <name>.sh usinig preferred editor. (eg. nano <file>.sh)
+- create file <name>.sh using preferred editor. (eg. nano <file>.sh)
+-- Alternatively, copy RanNumGen.sh from this directory.
 - Make script executable using 'chmod +X <file>'
 
 Usage

@@ -7,10 +7,10 @@ Please design a script that writes the numbers from 1 - 10 in random order.
 Each number should appear only once. You can use bash only.
 Please provide tests for the script, along with documentation which should include
 the following:
-● Build instructions
-● Usage
-● Description
-● Known limitations / bugs
+Build instructions
+Usage
+Description
+Known limitations / bugs
 
 Task 2
 Imagine a server with the following specs:
